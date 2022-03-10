@@ -12,7 +12,8 @@
         <h2>Historial de conciertos</h2>
         <div>
             <table>
-                <thead>
+                <th:block th:each="user : ${personas}">
+                <tbody>
                     <tr th:each="concierto:${concierto}">
                         <td>${concierto.id}</td>
                         <td>${concierto.artista}</td>
@@ -22,10 +23,7 @@
                         <td>${concierto.lugar}</td>
                         <a th:href="@{/delete/{id}(id=${user.getId})}">Eliminar</a>
                     </tr>
-                </thead>
-                <tbody>
-                    
-                    
+                  
                 </tbody>
             </table>
 
