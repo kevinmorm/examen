@@ -1,0 +1,61 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 mar. 2022, 18:43:18
+    Author     : kmor5
+*/
+
+body{
+    
+  background-image: url(fondo.jpg);
+  font-family: 'Montserrat';
+  background-size: cover;
+    background-attachment: fixed;
+}
+link{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-size: 43px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    color: #fff;
+}
+h2{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+input[type=text],
+input[type=password]{
+  font-size: 20px;
+    width: 400px;
+    padding: 10px;
+    border: none;
+  box-sizing: border-box;
+}
+.button{
+    border: none;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    background:  #5B2464;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: #cc0066;
+}
+p{
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iTicket - Historial de Conciertos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html xmlns:th="http://www.thymeleaf.org">
+        <link href="../static/css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>iTicket</h1>
+        <h2>Historial de conciertos</h2>
+        <div>
+            <table>
+                <thead>
+                    <tr th:each="concierto:${concierto}">
+                        <td>${concierto.id}</td>
+                        <td>${concierto.artista}</td>
+                        <td>${concierto.costo}</td>
+                        <td>${concierto.fecha}</td>
+                        <td>${concierto.capacidadMax}</td>
+                        <td>${concierto.lugar}</td>
+                        <a th:href="@{/delete/{id}(id=${user.getId})}">Eliminar</a>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    
+                </tbody>
+            </table>
+
+            
+            
+            
+        </div>
+        
+    </body>
+</html>
